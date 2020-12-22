@@ -25,6 +25,12 @@ dependencies {
         exclude(module: 'junit-vintage-engine')
     }
 }
+test {
+    useJUnitPlatform()
+}
 
+apply plugin: 'application'
 apply plugin: 'java'
-apply plugin: 'maven'
+apply plugin: "war"
+
+mainClassName = 'com.limit.redis.RedisApplication'
