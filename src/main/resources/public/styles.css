@@ -16,7 +16,7 @@
 
 @media screen and (min-width: 680px) {
     body {
-        background-image: url('/com/limit/redis/controller/RedisLabs_Illustration.svg/RedisLabs_Illustration.svg');
+        background-image: url('/RedisLabs_Illustration.svg');
         background-repeat: no-repeat;
         background-size: 28% auto;
         background-position: 104% -70px;
