@@ -1,0 +1,30 @@
+plugins {
+    id 'org.springframework.boot' version '2.4.1'
+    id 'java'
+}
+
+
+
+group = 'com.limit'
+version = '0.0.1-SNAPSHOT'
+
+description = """redis"""
+sourceCompatibility = '8'
+
+
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-zuul', version:'2.2.6.RELEASE'
+    compile group: 'com.marcosbarbero.cloud', name: 'spring-cloud-zuul-ratelimit', version:'2.2.0.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-redis', version:'2.3.7.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version:'2.3.7.RELEASE'
+    testCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version:'2.3.7.RELEASE') {
+        exclude(module: 'junit-vintage-engine')
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'maven'
