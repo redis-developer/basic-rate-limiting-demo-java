@@ -1,3 +1,6 @@
+# Spring(java) Redis rate-limiting Example
+Show how the redis works with Spring(java).
+
 # Redis rate-limiting example (front)
 
 ![alt text](preview.png)
