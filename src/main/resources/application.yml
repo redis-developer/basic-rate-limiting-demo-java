@@ -1,6 +1,6 @@
 zuul:
   routes:
-    serviceSimple:
+    PING:
       path: /api/ping
       url: forward:/
   ratelimit:
@@ -8,11 +8,10 @@ zuul:
     repository: REDIS
     key-prefix: spring-rate-limit
     policy-list:
-      serviceSimple:
+      PING:
         - limit: 10
           refresh-interval: 10
           type:
             - origin
-  strip-prefix: true
 
 
