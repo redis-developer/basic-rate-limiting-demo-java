@@ -29,6 +29,8 @@ docker-compose up -d --build
 #### Setup and run 
 
 Install gradle on mac: https://gradle.org/install/
+
+
 Install JDK on mac: https://docs.oracle.com/javase/10/install/installation-jdk-and-jre-macos.htm#JSJIG-GUID-0071963E-D247-4D15-BF49-AD19C7260740
 ``` sh
 gradle wrapper
