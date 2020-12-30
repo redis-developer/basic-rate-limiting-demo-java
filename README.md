@@ -12,7 +12,7 @@ git clone https://github.com/deliveryweb/redis-rate-limiting-java.git
 ```
 
 ### Run docker compose or install redis manually
-Install docker on mac: https://docs.docker.com/docker-for-mac/install/
+Install docker (on mac: https://docs.docker.com/docker-for-mac/install/)
 ```sh
 docker network create global
 docker-compose up -d --build
@@ -28,10 +28,10 @@ docker-compose up -d --build
 
 #### Setup and run 
 
-Install gradle on mac: https://gradle.org/install/
+Install gradle (on mac: https://gradle.org/install/)
 
 
-Install JDK on mac: https://docs.oracle.com/javase/10/install/installation-jdk-and-jre-macos.htm
+Install JDK (on mac: https://docs.oracle.com/javase/10/install/installation-jdk-and-jre-macos.htm)
 ``` sh
 gradle wrapper
 ./gradlew build
