@@ -1,17 +1,17 @@
-zuul:
-  routes:
-    PING:
-      path: /api/ping
-      url: forward:/
-  ratelimit:
-    enabled: true
-    repository: REDIS
-    key-prefix: spring-rate-limit
-    policy-list:
-      PING:
-        - limit: 10
-          refresh-interval: 10
-          type:
-            - origin
-
-
+#zuul:
+#  routes:
+#    PING:
+#      path: /api/ping
+#      url: forward:/
+#  ratelimit:
+#    enabled: true
+#    repository: REDIS
+#    key-prefix: spring-rate-limit
+#    policy-list:
+#      PING:
+#        - limit: 10
+#          refresh-interval: 10
+#          type:
+#            - origin
+#
+#

@@ -17,17 +17,18 @@ repositories {
     mavenCentral()
 }
 dependencies {
-    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-zuul', version:'2.2.6.RELEASE'
-    compile group: 'com.marcosbarbero.cloud', name: 'spring-cloud-zuul-ratelimit', version:'2.2.0.RELEASE'
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-redis', version:'2.3.7.RELEASE'
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version:'2.3.7.RELEASE'
-    testCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version:'2.3.7.RELEASE') {
-        exclude(module: 'junit-vintage-engine')
-    }
+
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-zuul:2.2.6.RELEASE'
+    implementation 'com.marcosbarbero.cloud:spring-cloud-zuul-ratelimit:2.2.0.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis:2.3.7.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.3.7.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-test:2.3.7.RELEASE'
+
+
+
 }
-test {
-    useJUnitPlatform()
-}
+
+
 
 apply plugin: 'application'
 apply plugin: 'java'
