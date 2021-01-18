@@ -15,7 +15,16 @@ Show how the redis works with Spring(java).
 
 # Redis rate-limiting example (command line)
 
+## Try it out
+<p>
+    <a href="https://heroku.com/deploy" target="_blank">
+        <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heorku" width="200px"/>
+    <a>
+</p>
+
+
 ![alt text](command-redis.png)
+
 ## Development
 
 ```
