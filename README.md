@@ -58,7 +58,7 @@ Don't forget to add add-ons heroku redis
 ![4  step](docs/4.png)
 
 <a href="https://github.com/GoogleCloudPlatform/cloud-run-button/issues/108#issuecomment-554572173">
-Problem with unsupported the flags when deploying google cloud run button
+Problem with unsupported flags when deploying google cloud run button
 </a>
 
 ---
