@@ -87,6 +87,7 @@ docker-compose up -d --build
 
 #### else  
     copy .env.example .env
+    export $(cat .env | xargs)
 
 #### Setup and run 
 
