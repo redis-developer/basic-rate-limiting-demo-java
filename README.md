@@ -13,10 +13,6 @@ Show how the redis works with Spring(java).
 
 ![alt text](preview.png)
 
-# Redis rate-limiting example (command line)
-
-![alt text](command-redis.png)
-
 ## Try it out
 <p>
     <a href="https://heroku.com/deploy" target="_blank">
@@ -60,6 +56,26 @@ Don't forget to add add-ons heroku redis
 <a href="https://github.com/GoogleCloudPlatform/cloud-run-button/issues/108#issuecomment-554572173">
 Problem with unsupported flags when deploying google cloud run button
 </a>
+
+---
+
+# How it works?
+
+## 1. How the data is stored:
+
+### 1. New responses are added key-ip
+    SETNX 127.0.0.1:PING 10
+### 2. Set a timeout on key    
+    EXPIRE 127.0.0.1:PING 10
+    
+## 2. How the data is changed:
+
+### 1. Next responses are get bucket:
+    GET 127.0.0.1:PING
+### 2. Next responses are changed bucket:
+    DECRBY 127.0.0.1:PING 
+
+#### See: https://redis.io/commands/INCR#pattern-rate-limiter-2 
 
 ---
 
