@@ -60,22 +60,20 @@ Problem with unsupported flags when deploying google cloud run button
 ---
 
 # How it works?
-
 ## 1. How the data is stored:
+<ol>
+    <li>New responses are added key-ip:<pre> SETNX 127.0.0.1:PING 10</pre></li>
+    <li>Set a timeout on key:<pre>EXPIRE 127.0.0.1:PING 10</pre></li>
+</ol>
+<br/>
 
-### 1. New responses are added key-ip
-    SETNX 127.0.0.1:PING 10
-### 2. Set a timeout on key    
-    EXPIRE 127.0.0.1:PING 10
-    
-## 2. How the data is changed:
-
-### 1. Next responses are get bucket:
-    GET 127.0.0.1:PING
-### 2. Next responses are changed bucket:
-    DECRBY 127.0.0.1:PING 
-
-#### See: https://redis.io/commands/INCR#pattern-rate-limiter-2 
+## 2. How the data is accessed:
+<ol>
+    <li>Next responses are get bucket: <pre>GET 127.0.0.1:PING</pre> </li>
+    <li> Next responses are changed bucket: <pre>DECRBY 127.0.0.1:PING </pre> </li>
+</ol>
+ 
+#### See: https://redis.io/commands/INCR#pattern-rate-limiter-2       
 
 ---
 
