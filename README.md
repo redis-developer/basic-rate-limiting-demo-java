@@ -59,21 +59,34 @@ Problem with unsupported flags when deploying google cloud run button
 
 ---
 
-# How it works?
+# <a href="https://redis.io/commands/INCR#pattern-rate-limiter-2">How it works?</a>
+
 ## 1. How the data is stored:
 <ol>
-    <li>New responses are added key-ip:<pre> SETNX 127.0.0.1:PING 10</pre></li>
-    <li>Set a timeout on key:<pre>EXPIRE 127.0.0.1:PING 10</pre></li>
+    <li>New responses are added key-ip:<pre> SETNX your_ip:PING limit_amount
+ Example: SETNX 127.0.0.1:PING 10
+ <a href="https://redis.io/commands/setnx">
+ more information</a>
+    </pre></li>
+    <li>Set a timeout on key:<pre>EXPIRE your_ip:PING timeout
+Example: EXPIRE 127.0.0.1:PING 1000
+ <a href="https://redis.io/commands/expire">
+more information</a> </pre></li>
 </ol>
 <br/>
 
 ## 2. How the data is accessed:
 <ol>
-    <li>Next responses are get bucket: <pre>GET 127.0.0.1:PING</pre> </li>
-    <li> Next responses are changed bucket: <pre>DECRBY 127.0.0.1:PING </pre> </li>
+    <li>Next responses are get bucket: <pre>GET your_ip:PING
+Example: GET 127.0.0.1:PING   
+    <a href="https://redis.io/commands/get">
+more information</a>
+</pre></li>
+    <li> Next responses are changed bucket: <pre>DECRBY your_ip:PING amount
+Example: DECRBY 127.0.0.1:PING 1
+<a href="https://redis.io/commands/decrby">
+more information</a> </pre> </li>
 </ol>
- 
-#### See: https://redis.io/commands/INCR#pattern-rate-limiter-2       
 
 ---
 
