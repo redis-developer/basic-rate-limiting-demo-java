@@ -1,6 +1,6 @@
 {
-  "app_name": "Redis rate-limiting example in Java(Spring)",
-  "description": "Simple app that demonstrates rate-limiting feature using Redis in Java(Spring)",
+  "app_name": "Redis rate-limiting example in Java (Spring)",
+  "description": "Simple app that demonstrates rate-limiting feature using Redis in Java (Spring)",
   "type": "Building Block",
   "contributed_by": "Redis Labs",
   "repo_url": "https://github.com/redis-developer/basic-rate-limiting-demo-java",
