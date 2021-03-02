@@ -1,0 +1,37 @@
+plugins {
+    id 'org.springframework.boot' version '2.4.1'
+    id 'java'
+}
+
+
+
+group = 'com.limit'
+version = '0.0.1-SNAPSHOT'
+
+description = """redis"""
+sourceCompatibility = '8'
+
+
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-zuul:2.2.6.RELEASE'
+    implementation 'com.marcosbarbero.cloud:spring-cloud-zuul-ratelimit:2.2.0.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis:2.3.7.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.3.7.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-test:2.3.7.RELEASE'
+
+
+
+}
+
+
+
+apply plugin: 'application'
+apply plugin: 'java'
+apply plugin: "war"
+
+mainClassName = 'com.limit.redis.RedisApplication'
