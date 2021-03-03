@@ -125,3 +125,9 @@ export $(cat .env | xargs)
 ./gradlew build
 ./gradlew run
 ```
+
+
+#### Run frontend
+
+Static сontent runs automatically with the backend part.
+
