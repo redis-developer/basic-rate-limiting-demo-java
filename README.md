@@ -7,7 +7,7 @@
 
 
 # Basic Redis Rate-limiting Demo Spring (Java) 
-Show how the redis works with Spring(Java).
+Show how the redis works with Spring (Java).
 
 ![alt text](preview.png)
 
