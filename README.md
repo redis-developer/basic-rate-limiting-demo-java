@@ -6,10 +6,8 @@
 <div style="height: 150px"></div>
 
 
-# Spring(java) Redis rate-limiting Example
-Show how the redis works with Spring(java).
-
-# Redis rate-limiting example (front)
+# Basic Redis Rate-limiting Demo Spring (Java) 
+Show how the redis works with Spring(Java).
 
 ![alt text](preview.png)
 
