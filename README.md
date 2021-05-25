@@ -11,6 +11,12 @@ Show how the redis works with Spring (Java).
 
 ![alt text](preview.png)
 
+# Overview video
+
+Here's a short video that explains the project and how it uses Redis:
+
+[![Watch the video on YouTube](docs/YTThumbnail.png)](https://www.youtube.com/watch?v=_mFWjk7ONa8)
+
 ## Try it out
 <p>
     <a href="https://heroku.com/deploy" target="_blank">
