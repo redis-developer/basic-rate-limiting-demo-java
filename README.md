@@ -1,13 +1,6 @@
-
-<div style="position: absolute; top: 0px; right: 0px;">
-    <img width="200" height="200" src="https://redislabs.com/wp-content/uploads/2020/12/RedisLabs_Illustration_HomepageHero_v4.svg">
-</div>
-
-<div style="height: 150px"></div>
-
-
 # Basic Redis Rate-limiting Demo Spring (Java) 
-Show how the redis works with Spring (Java).
+
+This application demonstrates rate limiting using Redis and Spring.
 
 ![alt text](https://github.com/redis-developer/basic-rate-limiting-demo-java/raw/master/preview.png)
 
@@ -96,42 +89,29 @@ more information</a>  </li>
 
 ## How to run it locally?
 
-## Development
-
-```
-git clone https://github.com/deliveryweb/redis-rate-limiting-java.git
-```
-
-### Run docker compose or install redis manually
-Install docker (on mac: https://docs.docker.com/docker-for-mac/install/)
-```sh
-docker network create global
-docker-compose up -d --build
-```
-
-#### Open directory server (cd server): copy .env.example to create .env (copy .env.example .env  or cp .env.example .env). And provide the values for environment variables (if needed)
+#### Open the files server/.env.example to see the available environment variables. You may set these variables when you start the application.
    	- REDIS_URL: Redis server url
-   	- REDIS_HOST: Redis server host
+    - REDIS_HOST: Redis server host
 	- REDIS_PORT: Redis server port
-	- REDIS_DB: Redis server db index
 	- REDIS_PASSWORD: Redis server password
 
 #### Run backend
 
-Install gradle (Use Gradle 6.3 or later) (on mac: https://gradle.org/install/) 
+1. Install gradle (Use Gradle 6.3 or later) (on mac: https://gradle.org/install/) 
 
+2. Install JDK (use 8 or later version) (on mac: https://docs.oracle.com/javase/10/install/installation-jdk-and-jre-macos.htm)
 
-Install JDK (use 8 or later version) (on mac: https://docs.oracle.com/javase/10/install/installation-jdk-and-jre-macos.htm)
+3. Set any relevant environment variables (if not connecting to Redis on localhist:6379). For example:
 
 ``` sh
+$ REDIS_PORT=6379
+```
+
+3. From the root directory of the project, run the following commands:
+``` sh
 cd server
-export $(cat .env | xargs)
 ./gradlew build
 ./gradlew run
 ```
 
-
-#### Run frontend
-
-Static сontent runs automatically with the backend part.
-
+4. Point your browser to `localhost:5000`.
