@@ -101,7 +101,7 @@ more information</a>  </li>
 
 2. Install JDK (use 8 or later version) (on mac: https://docs.oracle.com/javase/10/install/installation-jdk-and-jre-macos.htm)
 
-3. Set any relevant environment variables (if not connecting to Redis on localhist:6379). For example:
+3. Set any relevant environment variables (if not connecting to Redis on localhost:6379). For example:
 
 ``` sh
 $ REDIS_PORT=6379
