@@ -21,10 +21,6 @@ This application demonstrates rate limiting using Redis and Spring.
 
 ## How to run on Google Cloud
 
-<p>
-    If you don't have redis yet, plug it in  (https://spring-gcp.saturnism.me/app-dev/cloud-services/cache/memorystore-redis).
-    After successful deployment, you need to manually enable the vpc connector as shown in the pictures:
-</p>
 
 1. Open link google cloud console.
 
