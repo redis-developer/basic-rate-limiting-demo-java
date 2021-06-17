@@ -4,11 +4,7 @@ This application demonstrates rate limiting using Redis and Spring.
 
 ![alt text](https://github.com/redis-developer/basic-rate-limiting-demo-java/raw/master/preview.png)
 
-# Overview video
 
-Here's a short video that explains the project and how it uses Redis:
-
-[![Watch the video on YouTube](https://github.com/redis-developer/basic-rate-limiting-demo-java/raw/master/docs/YTThumbnail.png)](https://www.youtube.com/watch?v=_mFWjk7ONa8)
 
 ## Try it out
 <p>
