@@ -18,7 +18,7 @@
   "language": ["Java"],
   "redis_commands": ["PEXPIRE", "MULTI", "DEL", "PTTL", "EXEC", "DECR", "INCR"],
   "redis_features": [],
-  "redis_modules": ["rate-limit-redis"],
+  "redis_modules": [""],
   "app_image_urls": [
     "https://github.com/redis-developer/basic-rate-limiting-demo-java/blob/master/preview.png?raw=true"
   ],
